@@ -1,4 +1,11 @@
 class HomeController < ApplicationController
   def index
-  end 
+      @questions = Question.all
+  end
+  def info
+  end
+  def contact
+  end
+  def capital
+  end
 end

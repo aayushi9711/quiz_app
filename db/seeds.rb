@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+question=Question.new
+question.description="what is capital of tamil nadu?"
+question.answer="chennai"
+question.save
+question=Question.create([{description:'what is capital of Kerala?', answer:'trivandrum'},{description:'what is capital of punjab?', answer:'chandigarh'}])
+question=Question.new(description:"what is capital of J&k",answer:"srinagar")
+question.save
